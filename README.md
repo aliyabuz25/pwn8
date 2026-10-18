@@ -155,8 +155,6 @@ python3 -m unittest discover -s tests -v
 
 - **[@geohot](https://github.com/geohot)** — limera1n BootROM exploit
 - **[ipwnder_lite](https://github.com/dora2ios/ipwnder_lite)** — native Apple Silicon exploit backend
-- **[Legacy-iOS-Kit](https://github.com/LukeZGD/Legacy-iOS-Kit)** — firmware tools, ramdisk, Cydia archives
-- **[g1lbertJB](https://github.com/g1lbertJB/g1lbertJB)** — iOS 5.1.1 untether
 
 ## License
 
