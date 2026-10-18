@@ -153,6 +153,7 @@ python3 -m unittest discover -s tests -v
 
 ## Credits
 
+- **[@aliyabuz25](https://github.com/aliyabuz25)** — stabilized and toolized the entire pipeline into a single reliable application; designed the GUI, device detection, boot asset pipeline, SSH ramdisk integration, activation patch, untether packaging, on-device progress screen, Cydia setup and completion notification
 - **[@geohot](https://github.com/geohot)** — limera1n BootROM exploit
 - **[ipwnder_lite](https://github.com/dora2ios/ipwnder_lite)** — native Apple Silicon exploit backend
 
