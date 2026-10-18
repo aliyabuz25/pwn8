@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "remed1st"
+version = "0.1.0"
+description = "GTK4 device monitor for legacy iPhones, including iOS 5.1.1"
+requires-python = ">=3.10"
+
+[project.scripts]
+remed1st = "remed1st.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["remed1st*"]

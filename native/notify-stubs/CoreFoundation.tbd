@@ -1,0 +1,10 @@
+--- !tapi-tbd-v2
+archs: [ armv7 ]
+platform: ios
+install-name: /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+current-version: 744.0
+compatibility-version: 150.0
+exports:
+  - archs: [ armv7 ]
+    symbols: [ _CFStringCreateWithCString, _CFUserNotificationDisplayNotice, _CFRelease ]
+...

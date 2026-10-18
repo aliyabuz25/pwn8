@@ -1,0 +1,8 @@
+--- !tapi-tbd-v2
+archs: [ armv7 ]
+platform: ios
+install-name: /System/Library/PrivateFrameworks/IOSurface.framework/IOSurface
+exports:
+  - archs: [ armv7 ]
+    symbols: [ _IOSurfaceGetWidth, _IOSurfaceGetHeight, _IOSurfaceGetBytesPerRow, _IOSurfaceGetPixelFormat, _IOSurfaceGetBaseAddress, _IOSurfaceLock, _IOSurfaceUnlock ]
+...

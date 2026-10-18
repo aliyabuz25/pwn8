@@ -1,0 +1,12 @@
+{
+  "file": "limera1n.zip",
+  "size_bytes": 489598,
+  "sha256": "4cd1d9a2e30311754286a444db62cc66b7e543164ab613649223f9c38d19aed9",
+  "official_url": "https://www.limera1n.com/limera1n.zip",
+  "official_status": "HTTP 403",
+  "download_url": "https://raw.githubusercontent.com/DrWhax/limera1n-mirror/master/limera1n.zip",
+  "provenance": "Mirror maintainer reports recovering original downloads from web.archive.org; not authenticated by original publisher",
+  "ios_5_1_1_jailbreak_supported": false,
+  "architecture": "i386 (32-bit Intel)",
+  "runs_on_current_arm64_macos": false
+}
