@@ -101,7 +101,7 @@ remed1st runs the entire pipeline automatically:
 ```sh
 # 1. Clone both repos side by side
 git clone https://github.com/LukeZGD/Legacy-iOS-Kit
-git clone https://github.com/aliyabuz25/remed1st
+git clone https://github.com/aliyabuz25/pwn8
 
 # 2. Install dependencies
 cd remed1st
