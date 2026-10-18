@@ -2,6 +2,8 @@
 
 A macOS GTK application that jailbreaks **iPhone 4 GSM** (`iPhone3,1`) on **iOS 5.1.1** (build `9B208`).
 
+Just connect your iPhone and click **Jailbreak** — as easy as evasi0n. remed1st ships its own untether package (`remed1st-untether5`) so no additional downloads or Cydia sources are required.
+
 > Developed by [@aliyabuz25](https://github.com/aliyabuz25) — Special thanks to [@geohot](https://github.com/geohot), creator of limera1n.
 
 ---
