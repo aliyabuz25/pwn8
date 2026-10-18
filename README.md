@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/remed-mark.svg" width="96" height="96" alt="remed1st"/>
-  <h1>remed1st</h1>
+  <img src="assets/remed-mark.svg" width="96" height="96" alt="pwn8"/>
+  <h1>pwn8</h1>
   <p><strong>iPhone 4 GSM · iOS 5.1.1 jailbreak for macOS &amp; Linux</strong></p>
   <p>
     <img src="https://img.shields.io/badge/iOS-5.1.1-blue" alt="iOS 5.1.1"/>
@@ -19,13 +19,13 @@ Just connect your iPhone and click **Jailbreak** — as easy as evasi0n. remed1s
 
 ---
 
-## Why remed1st
+## Why pwn8
 
 ### One click. No configuration.
 
-Other tools (greenpois0n, redsn0w, Sn0wbreeze) require multiple manual steps, Windows-only interfaces or outdated 32-bit binaries that no longer run on modern hardware. remed1st runs natively on Apple Silicon and modern Linux, detects your device automatically and handles the entire pipeline with a single button press.
+Other tools (greenpois0n, redsn0w, Sn0wbreeze) require multiple manual steps, Windows-only interfaces or outdated 32-bit binaries that no longer run on modern hardware. pwn8 runs natively on Apple Silicon and modern Linux, detects your device automatically and handles the entire pipeline with a single button press.
 
-| | remed1st | greenpois0n | redsn0w | Sn0wbreeze |
+| | pwn8 | greenpois0n | redsn0w | Sn0wbreeze |
 |---|---|---|---|---|
 | Apple Silicon native | ✅ | ❌ | ❌ | ❌ |
 | One-click jailbreak | ✅ | ❌ | ❌ | ❌ |
@@ -38,7 +38,7 @@ Other tools (greenpois0n, redsn0w, Sn0wbreeze) require multiple manual steps, Wi
 
 ### Brick protection
 
-remed1st is designed so that a failure at **any stage cannot brick your device**:
+pwn8 is designed so that a failure at **any stage cannot brick your device**:
 
 - The system volume is never modified without a verified ramdisk SSH connection
 - `lockdownd` is uploaded, checksum-verified, then swapped atomically with `mv` — a failed transfer leaves the original file untouched
@@ -50,18 +50,18 @@ remed1st is designed so that a failure at **any stage cannot brick your device**
 
 ### What it does automatically that others don't
 
-- **Auto recovery exit** — if your device gets stuck in Recovery mode (e.g. after a failed boot), remed1st detects it and sends `irecovery -n` automatically; you don't need to manually exit
+- **Auto recovery exit** — if your device gets stuck in Recovery mode (e.g. after a failed boot), pwn8 detects it and sends `irecovery -n` automatically; you don't need to manually exit
 - **Activation patch** — applies the iOS 5.1.1 lockdownd activation patch so the phone works without an active carrier contract; greenpois0n skips this on some builds
-- **Existing jailbreak detection** — if Cydia is already installed, remed1st backs up your jailbreak files and reinstalls Cydia + the untether without touching your package database or installed tweaks
+- **Existing jailbreak detection** — if Cydia is already installed, pwn8 backs up your jailbreak files and reinstalls Cydia + the untether without touching your package database or installed tweaks
 - **Built-in untether** — `remed1st-untether5` (v1.0.1) is bundled and installed via dpkg after reboot; no Cydia source or internet connection required on the device
-- **On-device progress screen** — the remed1st logo and stage captions (Injecting Payload → Preparing Filesystem → Applying Untether → Installing Cydia → Rebooting) are displayed on the iPhone screen during the ramdisk boot
+- **On-device progress screen** — the pwn8 logo and stage captions (Injecting Payload → Preparing Filesystem → Applying Untether → Installing Cydia → Rebooting) are displayed on the iPhone screen during the ramdisk boot
 - **Completion notification** — a native iOS system dialog appears on the device after successful Cydia icon verification
 
 ---
 
 ## How it works
 
-remed1st runs the entire pipeline automatically:
+pwn8 runs the entire pipeline automatically:
 
 1. **DFU** — guides you through DFU entry with a live countdown timer; detects DFU automatically if already entered
 2. **limera1n** — fires the BootROM exploit via [ipwnder](https://github.com/dora2ios/ipwnder_lite) (native Apple Silicon binary)
@@ -78,7 +78,7 @@ remed1st runs the entire pipeline automatically:
 
 - **ECID guard** — every irecovery command targets the exact device ECID; a swapped device is rejected immediately
 - **Dual-path pwn verification** — after limera1n, confirmed via both ipwnder log (`pwned!`) and `irecovery -q PWND`; either alone is sufficient
-- **No ECID selector in Recovery** — `irecovery -i ECID -f iBEC` drops the USB connection mid-transfer on A4; remed1st detects and avoids this
+- **No ECID selector in Recovery** — `irecovery -i ECID -f iBEC` drops the USB connection mid-transfer on A4; pwn8 detects and avoids this
 - **USB re-enumeration** — a bundled macOS/Linux IOKit helper attempts target-only re-enumeration; never resets a hub
 - **Idempotent reinstall** — on an existing jailbreak, database and tweaks are preserved
 
@@ -104,7 +104,7 @@ git clone https://github.com/LukeZGD/Legacy-iOS-Kit
 git clone https://github.com/aliyabuz25/pwn8
 
 # 2. Install dependencies
-cd remed1st
+cd pwn8
 ./SETUP.command
 
 # 3. Launch
